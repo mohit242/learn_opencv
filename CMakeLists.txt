@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 2.8)
+project( ChessBoard )
+find_package( OpenCV REQUIRED )
+add_executable( draw_shapes draw_shapes.cpp )
+target_link_libraries( draw_shapes  ${OpenCV_LIBS} )
